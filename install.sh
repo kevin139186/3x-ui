@@ -74,7 +74,7 @@ elif [[ "${release}" == "amzn" ]]; then
         echo -e "${red} Please use Amazon Linux 2023!${plain}\n" && exit 1
     fi
 elif [[ "${release}" == "debian" ]]; then
-    if [[ ${os_version} -lt 11 ]]; then
+    if [[ ${os_version} -lt 10 ]]; then
         echo -e "${red} Please use Debian 11 or higher ${plain}\n" && exit 1
     fi
 elif [[ "${release}" == "almalinux" ]]; then
@@ -93,7 +93,7 @@ else
     echo -e "${red}Your operating system is not supported by this script.${plain}\n"
     echo "Please ensure you are using one of the following supported operating systems:"
     echo "- Ubuntu 20.04+"
-    echo "- Debian 11+"
+    echo "- Debian 10+"
     echo "- CentOS 8+"
     echo "- OpenEuler 22.03+"
     echo "- Fedora 36+"
